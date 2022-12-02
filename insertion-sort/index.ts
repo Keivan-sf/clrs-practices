@@ -9,7 +9,7 @@ for (let i = 1; i < elements.length; i++) {
     let j = i - 1;
     while (currentElement < sortedList[j] && j >= 0) {
         sortedList[j + 1] = sortedList[j];
-        j--; // implementation insertion-sort
+        j--;
     }
     sortedList[j + 1] = currentElement;
 }
