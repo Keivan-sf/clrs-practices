@@ -14,17 +14,15 @@ function merge(array: number[], start: number, middle: number, end: number) {
     right.push(10000);
     let l = 0;
     let r = 0;
-    let k = 0;
-    while (k < end - start) {
+    for (let k = start; k < end; k++) {
         console.log(`comparing ${left[l]} <= ${right[r]}`);
         if (left[l] <= right[r]) {
-            array[k + start] = left[l];
+            array[k] = left[l];
             l++;
         } else {
-            array[k + start] = right[r];
+            array[k] = right[r];
             r++;
         }
-        k++;
     }
     console.log(` >>left: ${left} || right: ${right}`);
 }
