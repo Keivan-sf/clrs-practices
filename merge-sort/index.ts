@@ -15,7 +15,6 @@ function merge(array: number[], start: number, middle: number, end: number) {
     let l = 0;
     let r = 0;
     for (let k = start; k < end; k++) {
-        console.log(`comparing ${left[l]} <= ${right[r]}`);
         if (left[l] <= right[r]) {
             array[k] = left[l];
             l++;
@@ -24,7 +23,6 @@ function merge(array: number[], start: number, middle: number, end: number) {
             r++;
         }
     }
-    console.log(` >>left: ${left} || right: ${right}`);
 }
 
 const array = [1, 4, 8, 1, 2, 4, 21, 33, 9, 92, 13, 45];
