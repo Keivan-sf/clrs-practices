@@ -1,9 +1,17 @@
+/**
+ * E 2.3-6
+ *
+ * Note: Insertion sort worst-case running time will not
+ * improve with binary search since it has to change the
+ * indices of each element no matter how soon it finds
+ * the right place for the new element.
+ */
+
 const elements = [
     1, 6, 8, 20, 23, 1, 7, 71, 12, 129, 9, 233, 12, 122, 12, 3, 5, 6,
 ];
 
 let sortedList = [elements[0]];
-console.time("test");
 for (let i = 1; i < elements.length; i++) {
     const currentElement = elements[i];
     pushElementIntoSortedArray(sortedList, currentElement);
@@ -31,4 +39,3 @@ function pushElementIntoSortedArray(array: number[], element: number) {
 }
 
 console.log(sortedList);
-console.timeEnd("test");
