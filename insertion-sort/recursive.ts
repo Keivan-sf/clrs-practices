@@ -17,5 +17,5 @@ function performInsertionSort(array: number[], element: number): number[] {
     return array;
 }
 
-const array = [1, 8, 12, 4, 9, 2, 19, 199, 22, 3, 23];
+const array = [1, 6, 8, 20, 23, 1, 7];
 console.log(sort(array));
