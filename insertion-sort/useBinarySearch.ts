@@ -1,4 +1,4 @@
-/**
+/*
  * E 2.3-6
  *
  * Note: Insertion sort worst-case running time will not
