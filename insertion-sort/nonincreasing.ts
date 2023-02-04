@@ -1,6 +1,6 @@
 const elements = [1, 6, 8, 20, 23, 1, 7];
 
-// loop-variant
+// loop-invariant
 let sortedList = [elements[elements.length - 1]];
 
 for (let i = elements.length - 2; i >= 0; i--) {
