@@ -4,6 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
+        "insertion-sort": "npx ts-node targets/insertion-sort.ts",
         "build": "npm run seed",
         "seed": "npx ts-node utils/seedGenerator.ts",
         "test": "echo \"Error: no test specified\" && exit 1"
