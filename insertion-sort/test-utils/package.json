@@ -6,6 +6,7 @@
     "scripts": {
         "insertion-sort": "npx ts-node targets/insertion-sort.ts",
         "recursive": "npx ts-node targets/recursive.ts",
+        "middle-tracking": "npx ts-node targets/middleTracking.ts",
         "build": "npm run seed",
         "seed": "npx ts-node utils/seedGenerator.ts",
         "test": "echo \"Error: no test specified\" && exit 1"
