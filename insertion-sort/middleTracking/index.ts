@@ -1,5 +1,5 @@
-const array = require("./seed.json")
-console.time("test");
+const array = [1, 6, 8, 20, 23, 1, 7];
+
 let sortedList = [array[0]];
 
 for (let i = 1; i < array.length; i++) {
@@ -27,6 +27,5 @@ for (let i = 1; i < array.length; i++) {
         sortedList[j + 1] = currentElement;
     }
 }
-console.timeEnd("test");
 
 console.log(sortedList);
